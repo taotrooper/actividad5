@@ -4,7 +4,25 @@
 }
 
 .listado, .formulario {
-    width: 100%;
     vertical-align: middle;
     padding: 20px;
+}
+
+.listado {
+    width: 70%;
+}
+
+.formulario {
+    width: 30%;
+}
+
+input, textarea {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px;
+}
+
+textarea {
+    height: 10rem;
 }

@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.header {
+    color: white;
+    background: black;
+    padding: 20px;
+}
+
+.footer {
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.listado {
+    /*background-color: #d4d4d8;*/
+}
+
+.post {
+    background-color: lightblue;
+    border: 1px solid #a0a0a0;
+    margin-bottom: 10px;
+    border-radius: 10px 10px;
+}
+
+.post__body {
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.post__title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.post__date {
+    font-size: 0.8rem;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.formulario {
+    background-color: #009e93;
+    color: white;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}

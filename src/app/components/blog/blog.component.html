@@ -1,1 +1,27 @@
-<p>blog works!</p>
+<div class="wrapper">
+    <section class="listado" [innerHTML]="cargarNoticias()">
+        
+    </section>
+
+    <section class="formulario">
+        <div class="w-form">
+            <div>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Introduce el título" [(ngModel)]="newNoticia.titulo">
+            </div>
+            <div>
+                <label for="imagen">URL de la imagen</label>
+                <input type="text" id="imagen" placeholder="Introduce la imagen" [(ngModel)]="newNoticia.imagen">
+            </div>
+            <div>
+                <label for="fecha">Fecha</label>
+                <input type="text" id="fecha" placeholder="Introduce la fecha (dd-mm-aaaa)" [(ngModel)]="newNoticia.fecha">
+            </div>
+            <div>
+                <label for="texto">Cuerpo de la noticia</label>
+                <textarea id="texto" [(ngModel)]="newNoticia.texto"></textarea>
+            </div>
+            <button (click)="guardarNoticia()">Guardar</button>
+        </div>
+    </section>
+</div>

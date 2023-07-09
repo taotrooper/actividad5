@@ -7,19 +7,20 @@
         <div class="w-form">
             <div>
                 <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Introduce el título" [(ngModel)]="newNoticia.titulo">
+                <input type="text" id="titulo" placeholder="Introduce el título" [(ngModel)]="newNoticia.titulo" required />
             </div>
             <div>
                 <label for="imagen">URL de la imagen</label>
-                <input type="text" id="imagen" placeholder="Introduce la imagen" [(ngModel)]="newNoticia.imagen">
+                <input type="text" id="imagen" placeholder="Introduce la url (jpg o png, incluir http(s):// al principio)" [(ngModel)]="newNoticia.imagen" required />
             </div>
             <div>
                 <label for="fecha">Fecha</label>
-                <input type="text" id="fecha" placeholder="Introduce la fecha (dd-mm-aaaa)" [(ngModel)]="newNoticia.fecha">
+                <input type="text" id="fecha" placeholder="Introduce la fecha (formato dd/mm/aaaa)" [(ngModel)]="newNoticia.fecha" required 
+                pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/"/>
             </div>
             <div>
                 <label for="texto">Cuerpo de la noticia</label>
-                <textarea id="texto" [(ngModel)]="newNoticia.texto"></textarea>
+                <textarea id="texto" [(ngModel)]="newNoticia.texto" required></textarea>
             </div>
             <button (click)="guardarNoticia()">Guardar</button>
         </div>

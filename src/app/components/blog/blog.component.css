@@ -9,11 +9,11 @@
 }
 
 .listado {
-    width: 70%;
+    width: 60%;
 }
 
 .formulario {
-    width: 30%;
+    width: 40%;
 }
 
 input, textarea {
@@ -25,4 +25,16 @@ input, textarea {
 
 textarea {
     height: 10rem;
+}
+
+button {
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.invalid {
+    background-color: pink;
 }
